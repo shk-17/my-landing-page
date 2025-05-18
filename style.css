@@ -1,0 +1,368 @@
+﻿@charset "utf-8";
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+html{
+font-size:20px;
+}
+
+@media screen and (max-width:900px){
+
+html{
+font-size:17px;
+}
+
+}
+
+body{
+font-family:serif;
+color:#fff;
+}
+
+a{
+color:#fff;
+text-decoration:none;
+}
+
+img{
+vertical-align:bottom;
+}
+
+ul{
+list-style:none;
+}
+
+/* ヘッダー */
+
+header{
+width:100%;
+background:rgba(255,255,255,0.5);
+position:fixed;
+top:0;
+left:0;
+}
+
+header h1{
+height:70px;
+max-width:1400px;
+margin:0 auto;
+padding:0 30px;
+display:flex;
+}
+
+header img{
+display:block;
+width:250px;
+}
+
+@media screen and (max-width:900px){
+
+header h1{
+height:50px;
+}
+
+header img{
+width:200px;
+}
+
+}
+
+@media screen and (max-width:600px){
+
+header h1{
+height:30px;
+padding:0 10px;
+}
+
+header img{
+width:150px;
+}
+
+}
+
+
+/* メインビジュアル */
+
+#main-pic{
+text-align:center;
+background:#000;
+}
+
+#main-pic img{
+width:100%;
+max-width:1920px;
+height:800px;
+object-fit:cover;
+}
+
+@media screen and (max-width:900px){
+
+#main-pic img{
+height:100vh;
+}
+
+}
+
+
+/* LINE友だちキャンペーン */
+
+.line{
+background:#776f57;
+}
+
+.line div{
+max-width:1400px;
+height:250px;
+margin:0 auto;
+padding:0 30px;
+display:flex;
+justify-content:space-between;
+align-items:center;
+}
+
+.line h2{
+font-size:2.3rem;
+}
+
+.line h2 span{
+display:block;
+font-size:1.5rem;
+}
+
+.line a{
+font-size:2rem;
+padding:5px 60px;
+border:1px solid #fff;
+}
+
+@media screen and (max-width:1200px){
+
+.line h2{
+font-size:3.8vw;
+}
+
+.line h2 span{
+font-size:2.5vw;
+}
+
+.line a{
+font-size:3vw;
+}
+
+}
+
+@media screen and (max-width:900px){
+
+.line div{
+flex-direction:column;
+height:auto;
+padding:50px 0;
+}
+
+.line h2{
+font-size:6.5vw;
+margin-bottom:30px;
+text-align:center;
+}
+
+.line h2 span{
+font-size:5vw;
+}
+
+.line a{
+font-size:5.3vw;
+}
+
+}
+
+
+/* こだわりポイント */
+
+#point{
+background:#14133a;
+padding:200px 0;
+}
+
+#point .fb{
+max-width:1400px;
+margin:0 auto;
+padding:0 30px;
+display:flex;
+justify-content:space-between;
+align-items:center;
+}
+
+#point img{
+width:45%;
+}
+
+.fb div{
+width:50%;
+}
+
+#point h2{
+font-size:1.8rem;
+}
+
+#point p{
+margin-top:30px;
+}
+
+@media screen and (max-width:900px){
+
+#point{
+padding:0;
+}
+
+#point .fb{
+display:block;
+padding:0;
+}
+
+#point img{
+width:100%;
+}
+
+.fb div{
+width:100%;
+padding:80px 30px;
+}
+
+}
+
+@media screen and (max-width:600px){
+
+.fb div{
+padding:80px 10px;
+}
+
+}
+
+/* プロダクト */
+
+#products{
+background:#e6e6e6;
+color:#776f57;
+padding:100px 30px;
+}
+
+#products h2{
+max-width:1340px;
+margin:0 auto;
+border-bottom:1px solid #776f57;
+font-size:2rem;
+}
+
+#products ul{
+max-width:1340px;
+margin:0 auto;
+display:flex;
+text-align:center;
+}
+
+#products li{
+width:50%;
+padding-top:100px;
+}
+
+#products img{
+width:100%;
+max-width:336px;
+}
+
+#products h3{
+margin-top:100px;
+font-size:1.7rem;
+}
+
+#products p{
+margin-bottom:20px;
+}
+
+#products a{
+background:#776f57;
+font-size:1.5rem;
+display:block;
+width:300px;
+height:70px;
+line-height:70px;
+margin:0 auto;
+border-radius:100px;
+box-shadow:5px 5px 10px rgba(0,0,0,0.3);
+}
+
+#products a:hover{
+position:relative;
+top:-2px;
+left:-2px;
+box-shadow:7px 7px 10px rgba(0,0,0,0.3);
+}
+
+@media screen and (max-width:900px){
+
+#products ul{
+display:block;
+}
+
+#products li{
+width:100%;
+}
+
+#products a{
+width:100%;
+max-width:300px;
+}
+
+}
+
+@media screen and (max-width:600px){
+
+#products{
+padding:100px 10px;
+}
+
+}
+
+/* クローズドビジュアル */
+
+#close{
+text-align:center;
+background:#000;
+}
+
+#close img{
+width:100%;
+max-width:1920px;
+height:500px;
+object-fit:cover;
+object-position:40% 50%;
+}
+
+/* footer */
+
+footer{
+background:#14133a;
+padding-top:200px;
+text-align:center;
+}
+
+footer img{
+width:70%;
+max-width:490px;
+}
+
+footer ul{
+margin:100px 0 200px;
+line-height:3;
+}
+
+footer p{
+background:#776f57;
+height:50px;
+line-height:50px;
+}
+
